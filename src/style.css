@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-poppins text-bookmark-white bg-bookmark-black antialiased selection:bg-bookmark-pink selection:bg-opacity-80;
+    }
+}
+
+@layer components {
+
+    .btn {
+        @apply uppercase
+        font-semibold
+        rounded-lg
+    }
+
+    .btn-sm {
+        @apply
+        bg-bookmark-pink
+        text-bookmark-white
+        text-xs
+        px-3
+        py-2
+
+    }
+
+    .btn-lg-primary {
+        @apply
+        bg-bookmark-pink
+        text-bookmark-white
+        lg:text-lg
+        text-base
+        px-5
+        py-3
+        lg:px-5
+        lg:py-4
+    }
+
+    .btn-lg-secondary {
+        @apply
+        bg-bookmark-black
+        text-bookmark-white
+        lg:text-lg
+        text-base
+        px-5
+        py-3
+        lg:px-5
+        lg:py-4
+    }
+}
